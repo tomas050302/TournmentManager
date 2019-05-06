@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+    <title>Inscritos</title>
+  </head>
+  <body>
+    <a href="index.html" id ="back">Voltar </a>
+    <div class="tabela">
+      <table>
+        <th>Nome</th>
+        <th>Ano</th>
+        <th>Turma</th>
+        <?php include 'showData.php'?>
+    </div>
+
+    <style media="screen">
+    *{
+      position: relative;
+      margin: 0px;
+      padding: 0px;
+    }
+    body{
+      background: #1e272e;
+    }
+    #back{
+      position: relative;
+      color: gray;
+      float: left;
+      margin-top: 1%;
+      margin-left: 1.2%;
+      font-family: 'Hind', sans-serif;
+    }
+    table {
+      position: absolute;
+      margin: 2%;
+      margin-left: 4%;
+      margin-top: 3.5%;
+      border-collapse: collapse;
+      width: 100%;
+      color: black;
+      font-family: 'Roboto Condensed', sans-serif;
+      font-size: 25px;
+      text-align: left;
+    }
+    th {
+      background-color: #2d3436;
+      color: white;
+    }
+
+    /* styling das linhas da tabela consoante a turma */
+
+    #AM {
+      background: #ff0080cc;
+    }
+
+    #AQB {
+      background: #2de843cc
+    }
+
+    #AGD {
+      background: #17c19fcc
+    }
+
+    #CM {
+      background: #ff8000cc
+    }
+
+    #CGE {
+      background: #0c0c69cc
+    }
+
+    #DPAE {
+      background: #991144cc
+    }
+
+    #ET {
+      background: #1717d0cc
+    }
+
+    #EIA {
+      background: #86991acc
+    }
+
+    #ITM {
+      background: #ffff00cc;
+    }
+
+    #PCI {
+      background: #941212cc
+    }
+
+    #TDS {
+      background: #e756e7cc
+    }
+
+    #TSA {
+      background: #f01313cc
+    }
+
+    #TSI {
+    	background: #46e4eccc
+    }
+    #resto{
+      background: #fff;
+    }
+    </style>
+  </body>
+</html>

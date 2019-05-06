@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+<link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+  <head>
+    <meta charset="utf-8">
+    <title>Quem Passa</title>
+  </head>
+  <body>
+    <a href="index.html" id ="back">Voltar</a>
+    <form class="form" action="whoPasses.php" method="post">
+      <?php include 'buildWhoPasses.php';?>
+      <button type="submit" name="submitButton" class = "button"></button>
+    </form>
+  </body>
+  <style media="screen">
+    body{
+      font-family: Saira-Extra-Condensed,sans-serif;
+    }
+    #back{
+      position: relative;
+      color: gray;
+      margin-top: 2%;
+      margin-left: 1%;
+      font-family: 'Hind', sans-serif;
+    }
+    body{
+      background: #1e272e;
+    }
+    h1{
+      margin-left: 17%;
+      margin-top: 3%;
+      font-size: 55px;
+      text-align: center;
+      font-family: 'Anton', sans-serif;
+    }
+    .button {
+      position: absolute;
+        float: left;
+        left: -2%;
+        margin-top: 600px;
+        outline:none;
+        height: 55px;
+        text-align: center;
+        width: 190px;
+        border-radius:40px;
+        background: #1e272e;;
+        border: 2px solid green;
+        color: green;
+        letter-spacing:1px;
+        text-shadow:0;
+        font-size: 17px;
+        font-weight:bold;
+        transition: all 0.25s ease;
+    }
+    .button:hover{
+        color:white;
+        background: green;
+    }
+    .button:active{
+        letter-spacing: 1.5px ;
+    }
+    .button::after{
+        content:"CONFIRMAR";
+    }
+    .form *{
+      margin-left: 2%;
+      margin-top: 2%;
+      vertical-align: middle;
+      cursor: pointer;
+    }
+    .form label{
+      width: 200px;
+      display: inline-block;
+    }
+    .form input{
+      clear: left;
+    }
+    .form button{
+      margin-top: 3.5%;
+      margin-left: 10%;
+    }
+
+  </style>
+</html>

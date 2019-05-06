@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Torneio</title>
+  </head>
+  <body>
+    <h1>TORNEIO DE FIFA ITM</h1>
+    <h2>EXPOCOLGAIA</h2>
+
+    <div class="btn1">
+      <form method="get" action="registo.html">
+        <button type="submit" class = "button"></button>
+      </form>
+    </div>
+
+    <div class="btn2">
+      <form method="get" action="inscritos.html">
+        <button type="submit" class = "button inscritos"></button>
+      </form>
+    </div>
+
+    <div class="btn3">
+      <form method="get" action="horario.html">
+        <button type="submit" class = "button horario"></button>
+      </form>
+    </div>
+
+    <form method="get" action="drawTorneio.php">
+      <button type="submit" class = "drawTorneio"></button>
+    </form>
+
+    <form method="get" action="whoPasses.html">
+      <button type="submit" class = "drawTorneio whoPasses"></button>
+    </form>
+
+    <style media="screen">
+      body{
+        position: relative;
+        font-family: 'Anton', sans-serif;
+        background: #1e272e;
+       }
+
+       h1{
+          margin-top: 3%;
+          font-size: 70px;
+          text-align: center;
+          font-family: 'Anton', sans-serif;
+          color: #fff;
+          margin-lefT: -3.5%;
+       }
+       h2{
+         margin-top: .5%;
+         font-size: 55px;
+         text-align: center;
+         font-family: 'Anton', sans-serif;
+         color: #fff;
+         margin-lefT: -3.5%;
+       }
+
+      .btn1{
+        position: absolute;
+        top: 155%;
+        left: 15%;
+        text-align: center;
+        display: flex;
+        flex-directions: row;
+        align-items: center;
+      }
+
+      .btn2{
+        position: absolute;
+        top: 155%;
+        left: 38%;
+        text-align: center;
+        display: flex;
+        flex-directions: row;
+        align-items: center;
+      }
+
+      .btn3{
+        position: absolute;
+        top: 155%;
+        left: 65%;
+        text-align: center;
+        display: flex;
+        flex-directions: row;
+        align-items: center;
+      }
+
+      .button {
+        margin-left: 35%;
+        margin-top: 50%;
+        outline:none;
+        height: 80px;
+        text-align: center;
+        width: 225px;
+        border-radius:40px;
+        background: #1e272e;
+        border: 2px solid green;
+        color: green;
+        letter-spacing:1px;
+        text-shadow:0;
+        font-size: 17px;
+        font-weight:bold;
+        transition: all 0.25s ease;
+      }
+
+      .drawTorneio {
+        outline:none;
+        height: 70px;
+        text-align: center;
+        width: 180px;
+        border-radius:15px;
+        background: #1e272e;
+        border: 4px solid brown;
+        color: brown;
+        letter-spacing:1px;
+        text-shadow:0;
+        font-size: 17px;
+        font-weight:bold;
+        transition: all 0.25s ease;
+        float: right;
+        margin-top: 32%;
+        margin-right: 2%;
+      }
+
+      .inscritos{
+        float: center;
+      }
+      .whoPasses{
+        float: left;
+        margin-left: 2%;
+      }
+
+      .horario{
+        float: right;
+        margin-left: 20%;
+      }
+
+      .button:hover{
+          color:white;
+          background: green;
+      }
+      .drawTorneio:hover{
+          color:white;
+          background: brown;
+      }
+      .button:active{
+          letter-spacing: 1.5px ;
+      }
+      .drawTorneio:active{
+          letter-spacing: 1.5px ;
+      }
+
+      .button::after{
+          content:"REGISTAR";
+      }
+      .drawTorneio::after{
+          content:"INICIAR TORNEIO";
+      }
+      .whoPasses::after{
+          content:"QUEM PASSA";
+      }
+      .inscritos::after{
+          content:"INSCRITOS";
+      }
+
+      .horario::after{
+          content: "HORÁRIOS";
+      }
+
+      .onclic {
+          width: 50px;
+          border-color: gray;
+          border-width:3px;
+          font-size:0;
+          border-left-color: green;
+          animation: rotating 2s 0.25s linear infinite;
+      }
+
+      .validate {
+          font-size:13px;
+          color: white;
+          background: green;
+        }
+
+        @keyframes rotating {
+          from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(360deg);
+          }
+      }
+    </style>
+  </body>
+</html>

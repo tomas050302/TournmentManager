@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+ <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+  <head>
+    <meta charset="utf-8">
+    <title>Página de Registo</title>
+  </head>
+  <body>
+    <a href="index.html" id ="back">Voltar</a>
+    <form name = "formRegisto" class="inputJogador" action="insert.php" method="post">
+      <input type="text" name="nomeJogador" placeholder="Nome" maxlength="25" required class = "txtInput"><br>
+      <div class="radios">
+        <input type="radio" name="anoJogador" value="10" checked>10º Ano
+        <input type="radio" name="anoJogador" value="11">11º Ano
+        <input type="radio" name="anoJogador" value="12">12º Ano
+        <input type="radio" name="anoJogador" value="Externo">Externo
+        <input type="radio" name="anoJogador" value="Básico">Básico
+      </div>
+
+      <select name="turmaJogador" required="required">
+        <option value="">-- Escolha uma Turma --</option>
+        <option value="AM">AM</option>
+        <option value="AQB">AQB</option>
+        <option value="AGD">AGD</option>
+        <option value="CM">CM</option>
+        <option value="CGE">CGE</option>
+        <option value="DPAE">DPAE</option>
+        <option value="ET">ET</option>
+        <option value="EIA">EIA</option>
+        <option value="ITM">ITM</option>
+        <option value="PCI">PCI</option>
+        <option value="TDS">TdS</option>
+        <option value="TSA">TSA</option>
+        <option value="TSI">TSI</option>
+      </select><br>
+      <input type="submit" name="btnSubmeter" value="REGISTAR" class = "button" disabled = "disabled">
+    </form>
+    <div class="condicoes">
+      <input type="checkbox" name="liAceito">
+      <span>Li e aceito as</span>
+      <a href="regras.html"><span>regras</span></a>
+      <span>deste torneio de FIFA</span>
+    </div>
+
+    <script src="checkSecundario.js" charset="utf-8"></script>
+    <script src="refreshButtonSubmit.js" charset="utf-8"></script>
+
+    <style media="screen">
+      body{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        background: #1e272e;
+      }
+      #back{
+        position: relative;
+        color: gray;
+        margin-top: 2%;
+        margin-left: 1.5%;
+        font-family: 'Hind', sans-serif;
+      }
+      .condicoes{
+        position: absolute;
+        display: flex;
+        flex-directions: row;
+        left: 21.8%;
+        top: 104%;
+        font-family: 'Hind', sans-serif;
+        font-size: 18px;
+      }
+      .condicoes span{
+        text-align: center;
+        margin-right: 5.5px;
+      }
+      .condicoes a{
+        letter-spacing: 1.2px;
+      }
+      .radios{
+        font-size: 14px;
+        margin-top: 1.2%;
+        float: left;
+        margin-left: 20.8%;
+        font-family: 'Hind', sans-serif;
+        font-size: 18px;
+      }
+
+      select {
+        font-family: 'Saira Extra Condensed', sans-serif;
+        -webkit-appearance: button;
+        -moz-appearance: button;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        border: 1px solid #AAA;
+        border-radius: 2px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+        color: #444;
+        margin: 0;
+        text-align: center;
+        float: right;
+        width: 20%;
+        font-size: 20px;
+        margin-top: 1%;
+        margin-right: 20.8%;
+      }
+
+      .txtInput {
+          width: 55%;
+          height: 2px;
+          margin-top: 18%;
+          font-size: 20px;
+          padding: 1.5%;
+          font-family: 'Hind', sans-serif;
+        }
+
+        .inputJogador {
+          position: relative;
+          padding: 1%;
+          margin: 1%;
+          font-size: 22px;
+          text-align: center;
+          font-family: 'Hind', sans-serif;
+        }
+
+      .button {
+          font-family: 'Saira Extra Condensed', sans-serif;
+          position: absolute;
+          top: 93%;
+          left: 46%;
+          outline:none;
+          float: right;
+          height: 45px;
+          text-align: center;
+          width: 200px;
+          border-radius:40px;
+          background: #1e272e;
+          border: 2px solid green;
+          color: green;
+          letter-spacing:1px;
+          text-shadow:0;
+          font-size: 22px;
+          font-weight:bold;
+          transition: all 0.25s ease;
+      }
+      .button:hover{
+          color:white;
+          background: green;
+      }
+      .button:active{
+          letter-spacing: 2px ;
+      }
+      .button::after{
+          content:"REGISTAR";
+      }
+    </style>
+  </body>
+</html>
